@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strings and Date</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <label for="title">Article title</label>
+        <input id="title">
+        <label for="imgsrc">Article img url</label>
+        <input id="imgsrc">
+        <label for="text">Article</label>
+        <textarea id="text"></textarea>
+        <br>
+        <p id="info"></p>
+        <button class="mainButton" onclick="saveArticle()"> Save Article</button>
+    </div>
+    <div>
+        <button class="mainButton" onclick="showArticles()">Show Articles</button>
+
+        <div id="articleContainer">
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+.wrap{
+    display: inline-grid;
+}
+.mainButton{
+    padding: 5px;
+    background-color: #ff733c;
+    color: white;
+    font-weight: bold;
+}
+.mainButton:hover{
+    cursor:pointer;
+    opacity: 60%;
+}
