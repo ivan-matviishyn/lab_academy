@@ -1,0 +1,162 @@
+body{
+    margin:0;
+}
+
+
+
+.sky{
+    height: 100vh;
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.wrap{
+    top: 55%;
+    position: relative;
+}
+.red{
+    box-sizing: border-box;
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    border-radius: 50%;
+    border: 40px solid red;
+}
+.orange{
+    box-sizing: border-box;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    z-index: 1;
+    height: 460px;
+    width: 460px;
+    margin: auto;
+    border-radius: 50%;
+    border: 40px solid orange;
+    animation-delay: 1s;
+}
+.yellow{
+    box-sizing: border-box;
+    top: 40px;
+    left: 40px;
+    position: absolute;
+    z-index: 2;
+    height: 420px;
+    width: 420px;
+    margin: auto;
+    border-radius: 50%;
+    border: 40px solid yellow;
+    animation-delay: 2s;
+}
+.green{
+    box-sizing: border-box;
+    top: 60px;
+    left: 60px;
+    position: absolute;
+    z-index: 3;
+    height: 380px;
+    width: 380px;
+    margin: auto;
+    border-radius: 50%;
+    border: 40px solid green;
+    animation-delay: 3s;
+}
+.lightblue{
+    box-sizing: border-box;
+    top: 80px;
+    left: 80px;
+    position: absolute;
+    z-index: 3;
+    height: 340px;
+    width: 340px;
+    margin: auto;
+    border-radius: 50%;
+    border: 40px solid lightblue;
+    animation-delay: 4s;
+}
+.blue{
+    box-sizing: border-box;
+    top: 100px;
+    left: 100px;
+    position: absolute;
+    z-index: 3;
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    border-radius: 50%;
+    border: 40px solid blue;
+    animation-delay: 5s;
+}
+.violet{
+    box-sizing: border-box;
+    top: 120px;
+    left: 120px;
+    position: absolute;
+    z-index: 3;
+    height: 260px;
+    width: 260px;
+    margin: auto;
+    border-radius: 50%;
+    border: 20px solid violet;
+    animation-delay: 6s;
+}
+.string{
+    box-shadow: 1px -4px 15px #FFFFFF;
+    opacity: 0.6;
+    animation-name: rainbow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes rainbow {
+    from{
+        box-shadow: 1px -4px 15px #131aff;
+
+    }
+    to{
+        box-shadow: 1px -4px 15px #fff978;
+        opacity: 1;
+    }
+}
+.cloud{
+    height: 80px;
+    width: 200px;
+    position: relative;
+    animation-name: clouds;
+    animation-duration: 4s;
+}
+.cloud>div{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+@keyframes clouds {
+    from{
+
+    }
+    to{
+        left: 120px;
+    }
+}
+.watter{
+    height: 100vh;
+    background: #0052D4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6FB1FC, #4364F7, #0052D4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #6FB1FC, #4364F7, #0052D4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 4;
+    position: relative;
+}
+.waves{
+    position: relative;
+    top: -20px;
+}
+div>.waves>div{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #0052D4;
+}
