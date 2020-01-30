@@ -1,0 +1,76 @@
+@import "variables";
+body{
+  margin: 0;
+}
+.header{
+  width: 100%;
+  background-color: @bg-color;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.left-btns{
+  display: inline;
+  padding: 15px 4px;
+  &__button{
+    background-color: @bg-color;
+    color: @text-color;
+    font-weight: bold;
+    font-size: 14px;
+    border: 0;
+
+    &:hover{
+      cursor:pointer;
+      color: @hover-color;
+      transition: 0.3s;
+    }
+    &--active{
+      color: blue;
+    }
+  }
+}
+.right-btns{
+  .left-btns();
+}
+//Header styles end
+.articles{
+  display: flex;
+  flex-direction: column;
+  &__item{
+    padding:10px;
+    &--read{
+      h3{
+        color: violet;
+      }
+    }
+    &__wrap{
+      h3{
+        margin: 0 0 5px 0;
+      }
+      img{
+        width: 20%;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+      p{
+        width: 80%;
+        float: right;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    }
+
+  }
+}
+ .table-container{
+   display: flex;
+   flex-flow: column-reverse;
+   &__table {
+     border: 1px solid @text-color;
+     border-collapse: collapse;
+
+     th, td {
+       border: 1px solid @text-color;
+       padding: 5px;
+     }
+   }
+ }
