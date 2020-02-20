@@ -1,0 +1,8 @@
+.elementWr{
+    margin: 5px;
+    border: 1px solid grey;
+}
+.btn{
+    background-color: blue;
+    color: white;
+}
